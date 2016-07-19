@@ -18,7 +18,9 @@ shinyUI(fluidPage(
     mainPanel(
        h5("Poniższy wykres przedstawia położenie punktów pomiarowych. 
           Po zaznaczeniu pewnego obszaru i kliknięciu na niego dwukrotnie otrzymamy 
-          zbliżenie zaznaczonego obszaru wykresu. Dodatkowo po kliknięciu na dany punkt
+          zbliżenie zaznaczonego obszaru wykresu. Kolorystyka punktów odpowiada średniej
+          błędów dla punktów pomiarowych.
+          Dodatkowo po kliknięciu na dany punkt
           otrzymujemy wykres pudełkowy błędów dla tego punktu wraz ze statystykami.
           Jeśli były błędy w estymacji piętra, to otrzymujemy również tabele z informacją o 
           liczbie błędów."),
