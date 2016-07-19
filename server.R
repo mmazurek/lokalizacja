@@ -28,7 +28,12 @@ shinyServer(function(input, output, session) {
      }
   })
   
-  floorData <- reactive({
+  observeEvent(input$in_pietro, {
+       ranges$x <- NULL
+       ranges$y <- NULL
+  })
+
+  floorData <- eventReactive(input$in_pietro,{
      dane <- punkty[punkty$pietro==input$in_pietro,]
   })
    
