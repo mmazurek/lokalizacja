@@ -1,11 +1,9 @@
 
 library(shiny)
-library(reshape2)
-library(ggplot2)
-library(dplyr)
-library(colorRamps)
-library(RCurl)
-library(repmis)
+require(reshape2)
+require(ggplot2)
+require(dplyr)
+require(repmis)
 
 source_data("https://github.com/mmazurek/lokalizacja/blob/master/punkty.rda?raw=true")
 
