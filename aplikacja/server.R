@@ -3,12 +3,13 @@ library(shiny)
 require(reshape2)
 require(ggplot2)
 require(dplyr)
-require(curl)
+#require(curl)
 #require(repmis)
 
-load( curl("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty.csv") )
+punkty <- read.csv("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty3.csv")
 
-#source_data("https://github.com/mmazurek/lokalizacja/blob/master/punkty.rda?raw=true")
+#load( curl("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty3.csv") )
+#source_data("https://github.com/mmazurek/lokalizacja/blob/master/punkty3.rda?raw=true")
 
 odlegl <- sqrt((punkty$x_real-punkty$x_est)^2 + (punkty$y_real-punkty$y_est)^2)
 blad_piet <- punkty$pietro!=punkty$pietro_est
