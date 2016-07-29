@@ -6,18 +6,32 @@ require(dplyr)
 #require(curl)
 #require(repmis)
 
+options(shiny.maxRequestSize=30*1024^2) 
+
 punkty <- read.csv("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty3.csv")
 
 #load( curl("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty3.csv") )
 #source_data("https://github.com/mmazurek/lokalizacja/blob/master/punkty3.rda?raw=true")
 
-odlegl <- sqrt((punkty$x_real-punkty$x_est)^2 + (punkty$y_real-punkty$y_est)^2)
-blad_piet <- punkty$pietro!=punkty$pietro_est
-
-punkty <- cbind(punkty, "blad"=odlegl, "blad_pietro"=blad_piet)
-
 shinyServer(function(input, output, session) {
+
+     userdata <- reactive({
+      inFile <- input$file1
+      
+      if (is.null(inFile)){
+         punkty1 <- read.csv("https://raw.githubusercontent.com/mmazurek/lokalizacja/master/punkty3.csv")
+      } else {
+         punkty1 <- read.csv(inFile$datapath)
+      }
+      
+      odlegl <- sqrt((punkty1$x_real-punkty1$x_est)^2 + (punkty1$y_real-punkty1$y_est)^2)
+      blad_piet <- punkty1$pietro!=punkty1$pietro_est
+      
+      punkty <- cbind(punkty1, "blad"=odlegl, "blad_pietro"=blad_piet) 
+      
+   })
    
+
   ranges <- reactiveValues(x = NULL, y = NULL)
 
   observeEvent(input$wykr_punkt_dblclick, {
@@ -38,7 +52,7 @@ shinyServer(function(input, output, session) {
   })
 
   floorData <- eventReactive(input$in_pietro,{
-     dane <- punkty[punkty$pietro==input$in_pietro,]
+     dane <- userdata()[userdata()$pietro==input$in_pietro,]
   })
    
   output$wykr_punkt <- renderPlot({
@@ -48,9 +62,8 @@ shinyServer(function(input, output, session) {
         geom_point(aes(colour = srednia)) +
         coord_cartesian(xlim = ranges$x, ylim = ranges$y) +
         labs(title='Wykres punktów pomiarowych') +
-        scale_color_gradient2(high = "tomato3", low= "slateblue3", mid="white", 
-                              midpoint=min(srednie$srednia)+(max(srednie$srednia)-min(srednie$srednia))/2 )+
-        theme( panel.background=element_rect(fill="gray65"),
+        scale_color_gradient2(mid="white", limits=c(0, 10), midpoint = 5)+
+        theme( panel.background=element_rect(fill="gray75"),
                panel.grid.major = element_line(colour = "grey50"),
                panel.grid.minor = element_line(colour = "grey50"))
   })
@@ -68,11 +81,12 @@ shinyServer(function(input, output, session) {
      
      
      ggplot(dane2_wykres, mapping = aes(y=value, x=pietro)) +
-         geom_boxplot(fill="seagreen3") +
+         geom_boxplot(fill="royalblue2") +
          stat_summary(fun.y=mean, geom="point", shape=19, size=2, col = "firebrick3")+
          labs(y="Błąd (odległość)", x="", title='Wykres błędów dla danego punktu pomiarowego')+
          scale_x_continuous(labels= rep("",3), breaks = min(dane2_wykres$pietro)+c(-1,0,1) )+
-         scale_y_continuous(breaks = seq(floor(min(dane2_wykres$value))-0.5, floor(max(dane2_wykres$value))+1.5, by=1))+
+         scale_y_continuous(limits=c(min(userdata()$blad),max(userdata()$blad)), 
+                            breaks = seq(floor(min(userdata()$blad))-0.5, floor(max(userdata()$blad))+1.5, by=1))+
          coord_flip()
    
      }
