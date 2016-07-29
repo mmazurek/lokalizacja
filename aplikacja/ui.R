@@ -10,7 +10,15 @@ shinyUI(fluidPage(
 
    sidebarLayout(
     sidebarPanel(
-       radioButtons("in_pietro", "Piętro", 
+      h6("Aplikacja umożliwia wczytanie własnego pliku. Aby wybrać plik z katalogu, należy
+          wybrać poniżej opcję 'z własnego katalogu', a następnie wybrać plik."),
+      radioButtons("in_plik", "Wybór pliku", c("testowy", "z własnego katalogu"), selected = "testowy"),
+       
+      conditionalPanel("input.in_plik=='z własnego katalogu'",
+                        fileInput('file1', 'Wybierz plik `.csv` (read.csv)',
+                                  accept=c('text/csv', 'text/comma-separated-values,text/plain', '.csv'))   ),
+       
+      radioButtons("in_pietro", "Piętro", 
                     0:5)
     ),
     
