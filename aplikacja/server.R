@@ -63,7 +63,7 @@ shinyServer(function(input, output, session) {
         coord_cartesian(xlim = ranges$x, ylim = ranges$y) +
         labs(title='Wykres punktów pomiarowych') +
         scale_color_gradient2(mid="white", limits=c(0, 10), midpoint = 5)+
-        theme( panel.background=element_rect(fill="gray75"),
+        theme( panel.background=element_rect(fill="gray85"),
                panel.grid.major = element_line(colour = "grey50"),
                panel.grid.minor = element_line(colour = "grey50"))
   })
