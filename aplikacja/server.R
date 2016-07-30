@@ -59,11 +59,11 @@ shinyServer(function(input, output, session) {
    srednie <- floorData() %>% group_by(x_real, y_real) %>% mutate(srednia=mean(blad))
       
      ggplot(srednie, mapping = aes(x_real,y_real)) +
-        geom_point(aes(colour = srednia)) +
+        geom_point(aes(colour = srednia),size=2.5) +
         coord_cartesian(xlim = ranges$x, ylim = ranges$y) +
         labs(title='Wykres punktów pomiarowych') +
-        scale_color_gradient2(mid="white", limits=c(0, 10), midpoint = 5)+
-        theme( panel.background=element_rect(fill="gray85"),
+        scale_color_gradient2(limits=c(0, max(userdata()$blad)), midpoint = max(userdata()$blad)/2)+
+        theme( panel.background=element_rect(fill="gray80"),
                panel.grid.major = element_line(colour = "grey50"),
                panel.grid.minor = element_line(colour = "grey50"))
   })
