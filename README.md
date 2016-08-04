@@ -8,5 +8,3 @@ Plik z danymi do aplikacji powinien być z rozszerzeniem `.csv` i zawierać 6 ko
 * y_est,
 * pietro,
 * pietro_est.
-
-# test
