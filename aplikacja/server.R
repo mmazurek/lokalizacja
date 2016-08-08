@@ -62,7 +62,7 @@ shinyServer(function(input, output, session) {
         geom_point(aes(colour = srednia),size=2.5) +
         coord_cartesian(xlim = ranges$x, ylim = ranges$y) +
         labs(title='Wykres punktów pomiarowych') +
-        scale_color_gradient2(limits=c(0, max(userdata()$blad)), midpoint = max(userdata()$blad)/2)+
+        scale_color_gradient2(limits=c(0, 15), midpoint = 5)+
         theme( panel.background=element_rect(fill="gray80"),
                panel.grid.major = element_line(colour = "grey50"),
                panel.grid.minor = element_line(colour = "grey50"))
@@ -85,8 +85,8 @@ shinyServer(function(input, output, session) {
          stat_summary(fun.y=mean, geom="point", shape=19, size=2, col = "firebrick3")+
          labs(y="Błąd (odległość)", x="", title='Wykres błędów dla danego punktu pomiarowego')+
          scale_x_continuous(labels= rep("",3), breaks = min(dane2_wykres$pietro)+c(-1,0,1) )+
-         scale_y_continuous(limits=c(min(userdata()$blad),max(userdata()$blad)), 
-                            breaks = seq(floor(min(userdata()$blad))-0.5, floor(max(userdata()$blad))+1.5, by=1))+
+         scale_y_continuous(limits=c(0,15), 
+                            breaks = seq(0,15, by=1))+
          coord_flip()
    
      }
