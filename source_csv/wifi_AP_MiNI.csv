@@ -1,0 +1,48 @@
+BSSID;Location;x;y;z;floor;SSID;Channel;Model;Power;Antenna;Antenna gain for 2.4GHz;Antenna gain for 5GHz;Max RSSI for AP;POI for max RSSI
+64-ae-0c-90-7f-00;Dining room;4.2;34.6;2.4;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-64;26609
+64-ae-0c-90-78-30;Faculty Council room;33.6;28.4;2.7;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;35402
+64-ae-0c-86-a5-60;Archipelago of Mathematics;7.8;56.2;1.9;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-90;27680
+64-ae-0c-87-5c-a0;Corridor;33.4;23.0;2.7;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;41087
+64-ae-0c-86-e1-10;Corridor;6.532903226;19.9;2.2;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;9001
+64-ae-0c-86-a2-30;Corridor;28.0;16.5;2.6;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;27409
+64-ae-0c-90-81-40;Hall;21.7;34.6;2.7;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-43;22822
+64-ae-0c-87-67-60;Room 17;6.532903226;9.0;2.2;0;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-50;9860
+64-ae-0c-86-1f-b0;Corridor;14.8;14.08;2.6;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;109868
+64-ae-0c-86-fd-30;Room 101;11.9;35.3;3.1;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;101428
+64-ae-0c-87-52-30;Room 102;12.4;26.6;3.0;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;101303
+64-d9-89-6b-e4-40;Room 103;12.4;18.2;3.1;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;103143
+64-ae-0c-86-a3-90;Room 105A;8.6;11.2;2.8;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;111724
+64-ae-0c-be-e9-20;Room 201;14.2;40.5;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;218941
+64-ae-0c-87-cf-b0;Room 202;14.1;46.3;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;217109
+64-ae-0c-86-e4-f0;Room 203;14.1;52.7;2.7;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;217182
+64-ae-0c-90-7f-70;Room 210;6.7;57.7;2.7;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-42;207548
+64-ae-0c-86-d4-80;Room 211;6.7;48.9;2.7;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;201566
+64-ae-0c-86-dd-50;Room 212;6.7;38.2;2.7;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-39;207308
+64-ae-0c-86-e0-90;Room 213;6.7;28.2;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-40;201301
+64-ae-0c-86-db-10;Room 214;6.7;19.5;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-39;201269
+64-ae-0c-91-53-20;Room 216;6.7;6.5;2.6;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-40;204909
+64-ae-0c-86-df-40;Room 217;10.5;12.6;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-40;212787
+64-ae-0c-56-2f-f0;Room 218;13.9;12.7;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-38;216689
+64-ae-0c-87-39-d0;Room 219;10.1;31.5;2.8;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-41;213009
+b8-62-1f-16-db-70;Room 227;24.7;20.9;3.4;1;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-44;235200
+64-ae-0c-90-7b-a0;Room 227;31.0;38.2;2.0;2;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-35;245126
+64-ae-0c-86-d8-80;Room 301;14.1;40.6;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;308841
+64-ae-0c-91-68-90;Room 302;14.0;46.7;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-52;309468
+64-ae-0c-87-73-00;Room 303;14.0;52.8;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-50;309500
+64-ae-0c-87-d4-30;Room 304;14.0;58.9;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-49;309781
+64-ae-0c-86-72-00;Room 310;6.6;57.7;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-50;309906
+64-ae-0c-90-78-90;Room 311;6.6;48.0;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-48;310060
+b8-62-1f-17-1a-50;Room 312;6.6;37.8;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-53;310201
+b8-62-1f-1c-ff-00;Room 313;6.6;28.7;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-49;310284
+b8-62-1f-1c-ee-f0;Room 314;6.6;18.5;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-47;310284
+b8-62-1f-1c-ef-00;Room 316;6.6;6.8;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;310946
+b8-62-1f-17-35-d0;Room 317;8.9;9.4;2.7;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;311209
+b8-62-1f-1d-01-60;Room 318;8.9;16.3;2.8;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-52;311340
+b8-62-1f-1c-f2-20;Room 328;32.5;20.0;3.1;3;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-64;330423
+64-d9-89-c5-a1-20;Corridor;6.7;8.7;2.3;4;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;408781
+64-ae-0c-86-a5-50;Corridor;6.7;33.9;2.3;4;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;409144
+64-ae-0c-87-18-b0;Corridor;6.7;58.1;2.4;4;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;409441
+64-ae-0c-90-7d-c0;Corridor;31.9;34.3;2.3;4;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-45;437285
+64-ae-0c-87-be-a0;Corridor;6.7;33.4;2.1;5;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;511105
+64-ae-0c-86-ef-40;Corridor;6.7;57.4;2.3;5;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-37;511402
+64-ae-0c-86-de-30;Corridor;31.9;34.3;2.3;5;MiNIa;1;CISCO AIR-LAP1142N-E-K9 ;20dBm;Integrated horizontal beamwidth 360°;4dBi;3dBi;-39;544106
